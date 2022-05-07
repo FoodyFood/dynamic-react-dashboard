@@ -1,10 +1,13 @@
 bpr: build-image push-image restart
 
-install:
-	npm install --prefix build/
-
 run:
-	npm run dev --prefix build/
+	pushd ./build/; npm run dev; popd;
+
+install-win:
+	bash.exe -c -i "pushd ./build/; npm install; popd"
+
+run-win:
+	bash.exe -c -i "pushd ./build/; npm run dev; popd"
 
 build-image:
 	docker build -f build/dockerfile -t ghcr.io/foodyfood/dynamic-react-dashboard:latest ./build/
