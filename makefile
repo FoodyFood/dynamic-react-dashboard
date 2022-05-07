@@ -1,3 +1,5 @@
+bpr: build-image push-image restart-deployment
+
 run:
 	npm run dev
 
@@ -12,7 +14,6 @@ run-image:
 
 push-image:
 	docker push ghcr.io/foodyfood/dynamic-react-dashboard:latest
-
 
 helm-deploy:
 	-helm install dashboard ./deploy/ -n dashboard --create-namespace
