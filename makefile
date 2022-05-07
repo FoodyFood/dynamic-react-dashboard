@@ -1,10 +1,10 @@
 bpr: build-image push-image restart
 
-run:
-	npm run dev
-
 install:
-	npm install
+	npm install --prefix build/
+
+run:
+	npm run dev --prefix build/
 
 build-image:
 	docker build -f build/dockerfile -t ghcr.io/foodyfood/dynamic-react-dashboard:latest ./build/
