@@ -1,4 +1,4 @@
-bpr: build-image push-image restart-deployment
+bpr: build-image push-image restart
 
 run:
 	npm run dev
