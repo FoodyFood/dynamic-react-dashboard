@@ -14,8 +14,8 @@ push-image:
 	docker push ghcr.io/foodyfood/dynamic-react-dashboard:latest
 
 
-deploy:
-	-helm install infra-push-dash ./deploy/ -n infra-push --create-namespace
+helm-deploy:
+	-helm install dashboard ./deploy/ -n dashboard --create-namespace
 
 restart:
-	kubectl rollout restart deployment/infra-push-dash --namespace $(namespace)
+	kubectl rollout restart deployment/dashboard --namespace dashboard
