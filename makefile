@@ -1,7 +1,7 @@
 bpr: build-image push-image restart
 
 run:
-	pushd ./build/; npm run dev; popd;
+	cd ./build/; npm run dev;
 
 install-win:
 	bash.exe -c -i "pushd ./build/; npm install; popd"

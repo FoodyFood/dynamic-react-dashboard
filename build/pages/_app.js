@@ -9,6 +9,9 @@ import Footer from '../components/Footer.js'
 // Styles
 import '../styles/globals.css'
 
+// Socket.io
+import io from 'socket.io-client';
+
 
 function Dashboard({ Component, pageProps }) {
   return (
@@ -25,7 +28,7 @@ function Dashboard({ Component, pageProps }) {
 
       <Component {...pageProps} />
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
