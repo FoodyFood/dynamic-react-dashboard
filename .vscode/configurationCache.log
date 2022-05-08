@@ -1,1 +1,0 @@
-{"buildTargets":["bpr","build-image","helm-deploy","install","install-win","make.exe","push-image","restart","run","run-image","run-win"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
