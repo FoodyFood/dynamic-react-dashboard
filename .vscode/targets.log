@@ -6,9 +6,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # PARTICULAR PURPOSE.
 
 # This program built for i386-pc-mingw32
- 
 
-# Make data base, printed on Sat May 07 20:21:56 2022
+# Make data base, printed on Sun May 08 16:47:00 2022
 
 # Variables
 
@@ -57,9 +56,9 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c84cf370-d2f7-4dde-897f-e73ce7b04f83-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-e8640a90-36cd-4320-88cd-59fcbd089956-sock
 # environment
-VSCODE_CWD = D:\OneDrive\programming\github-repos
+VSCODE_CWD = C:\Users\d1\AppData\Local\Programs\Microsoft VS Code
 # environment
 PATH = C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\dotnet\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;D:\numerix-off\bitbucket-repos\aws-mfa-session-updater\;;C:\Program Files\PowerShell\7\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\d1\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\d1\AppData\Local\Programs\Python\Python39\;C:\Users\d1\AppData\Local\Microsoft\WindowsApps;;C:\Users\d1\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin
 # environment
@@ -85,7 +84,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 GODEBUG = x509ignore
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13108_HEROFWIDAHHPHEDN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12512_CTDMBFZYBTVGEDKH
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -125,7 +124,7 @@ MAKECMDGOALS := all
 # default
 MAKE_VERSION := 3.81
 # makefile
-.DEFAULT_GOAL := run
+.DEFAULT_GOAL := bpr
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # automatic
@@ -193,11 +192,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 13108
+VSCODE_PID = 12512
 # environment
 USERDOMAIN_ROAMINGPROFILE = DOCONNOR6540
 # variable set hash-table stats:
-# Load=92/1024=9%, Rehash=0, Collisions=6/102=6%
+# Load=92/1024=9%, Rehash=0, Collisions=10/112=9%
 
 # Pattern-specific Variable Values
 
@@ -211,7 +210,7 @@ USERDOMAIN_ROAMINGPROFILE = DOCONNOR6540
 # C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\: could not be stat'd.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1622898672): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1641978923): 170 files, no impossibilities.
-# . (key d:/OneDrive/programming/github-repos/dynamic-react-dashboard, mtime 1651951316): 19 files, no impossibilities.
+# . (key d:/OneDrive/programming/github-repos/dynamic-react-dashboard, mtime 1652001700): 9 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1649803542): 8 files, no impossibilities.
 # D:\numerix-off\bitbucket-repos\aws-mfa-session-updater\ (key D:/numerix-off/bitbucket-repos/aws-mfa-session-updater/, mtime 1639338585): 9 files, no impossibilities.
 # C:\Program Files\PowerShell\7\ (key C:/Program Files/PowerShell/7/, mtime 1648498818): 478 files, no impossibilities.
@@ -233,7 +232,7 @@ USERDOMAIN_ROAMINGPROFILE = DOCONNOR6540
 # C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL (key C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL, mtime 1641173029): 10 files, no impossibilities.
 # C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1641170238): 7 files, no impossibilities.
 
-# 3929 files, no impossibilities in 27 directories.
+# 3919 files, no impossibilities in 27 directories.
 
 # Implicit Rules
 
@@ -244,9 +243,19 @@ USERDOMAIN_ROAMINGPROFILE = DOCONNOR6540
 # Not a target:
 all:
 #  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+install-win:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  commands to execute (from `makefile', line 10):
+	bash.exe -c -i "pushd ./build/; npm install; popd"
+	
 
 # Not a target:
 .DEFAULT:
@@ -254,11 +263,30 @@ all:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-makefile:
+push-image:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  commands to execute (from `makefile', line 22):
+	docker push ghcr.io/foodyfood/dynamic-react-dashboard:latest
+	
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-08 10:08:21
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build-image:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 16):
+	docker build -f build/dockerfile -t ghcr.io/foodyfood/dynamic-react-dashboard:latest ./build/
+	
 
 # Not a target:
 .SUFFIXES:
@@ -266,24 +294,61 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+bpr: build-image push-image restart
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+restart:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 28):
+	kubectl rollout restart deployment/dashboard --namespace dashboard
+	
+
 run:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `makefile', line 2):
-	npm run dev
+#  commands to execute (from `makefile', line 4):
+	cd ./build/; npm run dev;
+	
+
+run-image:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 19):
+	docker run -it --rm -p 3000:3000 ghcr.io/foodyfood/dynamic-react-dashboard:latest
+	
+
+run-win:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 13):
+	bash.exe -c -i "pushd ./build/; npm run dev; popd"
+	
+
+helm-deploy:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `makefile', line 25):
+	-helm install dashboard ./deploy/ -n dashboard --create-namespace
 	
 
 install:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  commands to execute (from `makefile', line 5):
-	npm install
+#  commands to execute (from `makefile', line 7):
+	cd ./build/; npm install;
 	
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/7=0%
+# Load=14/1024=1%, Rehash=0, Collisions=1/28=4%
 # VPATH Search Paths
 
 # No `vpath' search paths.
@@ -295,8 +360,8 @@ install:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Sat May 07 20:21:56 2022
+# Finished Make data base on Sun May 08 16:47:00 2022
 
  
-makefile:7: *** missing separator.  Stop.
+make.exe: *** No rule to make target `all'.  Stop.
 

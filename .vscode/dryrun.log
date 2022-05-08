@@ -1,6 +1,7 @@
 make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: Entering directory `d:/OneDrive/programming/github-repos/dynamic-react-dashboard'
+docker build -f build/dockerfile -t ghcr.io/foodyfood/dynamic-react-dashboard:latest ./build/
+docker push ghcr.io/foodyfood/dynamic-react-dashboard:latest
+kubectl rollout restart deployment/dashboard --namespace dashboard
 make.exe: Leaving directory `d:/OneDrive/programming/github-repos/dynamic-react-dashboard'
  
-makefile:7: *** missing separator.  Stop.
-
