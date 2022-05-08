@@ -4,8 +4,13 @@ import styles from '../styles/Common.module.css'
 
 export default function Campaign(props) {
   return(
-    <p className={styles.blurb}>
-        A Campaign
-    </p>
+    <div className={styles.card}>
+      <h1>
+        {props.CampaignName}
+      </h1>
+      <p>
+        {props.CampaignDescription}
+      </p>
+    </div>
   )
 }
