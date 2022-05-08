@@ -7,11 +7,11 @@ i wanted the dashboard to be able to dynamically alter it's contents depending o
 As a final challange, be able to sent selctions and actions the user names back through the websocoket.
 
 
-### Preview
+## Preview
 
 ![Homepage](./docs/homepage.jpg)
 
-### Prerequisites
+## Prerequisites
 
 This is javascript/react/next.js so it needs npm.
 
@@ -26,7 +26,7 @@ Windows
 make install-win
 ```
 
-### Running 
+## Running 
 
 You can run this in your local VS Code too.
 
