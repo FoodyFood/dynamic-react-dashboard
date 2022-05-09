@@ -1,10 +1,10 @@
 # Dynamic React Dashboard
 
-I used this to learn how to connect a websocket to a dashboard.
+I used this to learn how to connect a dashboard to a websocket.
 
 i wanted the dashboard to be able to dynamically alter it's contents depending on what it got from the websocket.
 
-As a final challange, be able to sent selctions and actions the user names back through the websocoket.
+As a final challange, be able to sent selctions and actions the user makes back through the websocoket.
 
 
 ## Preview
